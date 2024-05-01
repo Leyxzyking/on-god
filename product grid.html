@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce product grid</title>
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            background-color: burlywood;
+        }
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            font-family: serif;
+            color: darkmagenta;
+            text-shadow: 1px 1px 2px black;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            flex-flow: row wrap;
+            width: 98%;
+            padding: 10px;
+        }
+        .product {
+            /* flex: 0 1 ; */
+            display: flex;
+            flex-flow: column;
+            max-width: 25%;
+            border: 1px solid rgb(10, 153, 74);
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: darkgoldenrod;
+            float: left;
+        }
+        .product img {
+            height: 100px;
+            width: 100px;
+        }
+
+        .product p {
+            font-size: 11px;
+            text-align: center;
+            padding-top: 5px;
+        }
+        .product h3 {
+            margin-top: 10px;
+            font-size: 15px;
+            white-space: nowrap;
+        }
+        .product span {
+            font-weight: bold;
+            padding-top: 5px;
+            font-size: 11px;
+            color: #3f3f3f;
+        }
+        .product button {
+            margin-top: 10px;
+            white-space: nowrap;
+            padding: 10px 10px;
+            background-color: rgb(28, 180, 155);
+            color: rgb(238, 222, 222);
+            border: 3px;
+            border-radius: 8px;
+            border-color: aqua;
+            cursor: pointer;
+            transition: all 1s ease-in-out;
+        }
+        .product button:hover {
+            background-color: rgb(13, 58, 180);
+            box-shadow: 1px 1px 4px black;
+            transition: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Leyxzy Enterprise</h1>
+        <div class="product">
+            <img src="Tshirt_men.jpg.jpg" alt="T-shirt(men)">
+            <h3>T-shirt(men)</h3>
+            <p>Description of product 1</p>
+            <span>$20.00</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="Tshirt_wemen.jpg.jpg" alt="T-shirt_wemen">
+            <h3>T-shirt(wemen)</h3>
+            <p>Description of product 2</p>
+            <span>$24.55</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="Hoodie_unisex.jpg.jpg" alt="Hoodie">
+            <h3>Hoodie</h3>
+            <p>Description of product 3</p>
+            <span>$23.15</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="joggers_men.jpg.jpg" alt="joggers(men)">
+            <h3>joggers(men)</h3>
+            <p>Description of product 4</p>
+            <span>$10.95</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="jeans_wemen.jpg.jpg" alt="jeans(wemen)">
+            <h3>jeans(wemen)</h3>
+            <p>Description of product 5</p>
+            <span>$25.00</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="sneakers_unisex.jpg.jpg" alt="sneakers(unisex)">
+            <h3>sneakers(unisex)</h3>
+            <p>Description of product 6</p>
+            <span>$21.99</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="Backpack.jpg.jpg" alt="Backpack">
+            <h3>Backpack</h3>
+            <p>Description of product 7</p>
+            <span>$19.75</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="watch.jpg.jpg" alt="watch">
+            <h3>watch</h3>
+            <p>Description of product 8</p>
+            <span>$20.05</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="smart_phone.jpg.jpg" alt="smartphone">
+            <h3>smartphone</h3>
+            <p>Description of product 9</p>
+            <span>$22.15</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="laptop.jpg.jpg" alt="laptop">
+            <h3>laptop</h3>
+            <p>Description of product 10</p>
+            <span>$17.95</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="Headphone.jpg.jpg" alt="Headphone">
+            <h3>Headphone</h3>
+            <p>Description of product 11</p>
+            <span>$21.05</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="sun_glasses.jpg.jpg" alt="sun glasses">
+            <h3>Sun glasses</h3>
+            <p>Description of product 12</p>
+            <span>$18.25</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="perfume.jpg.jpg" alt="perfume">
+            <h3>perfume</h3>
+            <p>Description of product 13</p>
+            <span>$22.15</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="hand_glove.jpg.jpg" alt="hand glove">
+            <h3>Hand glove</h3>
+            <p>Description of product 14</p>
+            <span>$19.05</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="standing_fan.jpg.jpg" alt="hand glove">
+            <h3>Hand glove</h3>
+            <p>Description of product 15</p>
+            <span>$19.05</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="motor_bike.jpg.jpg" alt="motor bike">
+            <h3>Motor bike</h3>
+            <p>Description of product 16</p>
+            <span>$31.05</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="faidat.jpg.jpg" alt="faidat">
+            <h3>white top</h3>
+            <p>Description of product 17</p>
+            <span>$21.05</span>
+            <button>add to cart</button>
+        </div>
+        <div class="product">
+            <img src="demi.jpg.jpg" alt="demi">
+            <h3>wine gown</h3>
+            <p>Description of product 18</p>
+            <span>$22.05</span>
+            <button>add to cart</button>
+        </div>
+    </div>
+</body>
+</html>
